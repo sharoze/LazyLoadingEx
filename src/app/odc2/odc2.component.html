@@ -1,0 +1,24 @@
+<h4>Employees of ODC2</h4>
+
+<table>
+  <thead>
+  <th>
+    EmpId
+  </th>
+  <th>
+    FullName
+  </th>
+</thead>
+<tbody>
+  <ng-container  *ngFor="let item of employees">
+    <tr>
+    <td>{{item.id}}</td>
+    <td>{{item.Name}}</td>
+  </tr>
+  </ng-container>
+</tbody>
+</table>
+
+<!-- <ng-container  *ngFor="let item of employees" >
+  <h1>{{item.Name}}</h1>
+</ng-container> -->
